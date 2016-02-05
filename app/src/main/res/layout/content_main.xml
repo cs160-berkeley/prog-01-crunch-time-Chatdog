@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.chatdog.prog1.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:backgroundTint="#ccf2f7"
+    android:background="#d4e6f1">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Calorie Counter"
+                android:id="@+id/textView2"
+                android:textSize="30dp"
+                android:layout_marginBottom="100dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/inputText"
+                android:textSize="24dp"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number Reps/Minutes"
+                android:id="@+id/textView"
+                android:textSize="24dp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="132dp"
+                    android:id="@+id/linearLayout">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pushupButton"
+                        android:background="@drawable/pushup"
+                        android:layout_alignParentBottom="true"
+                        android:onClick="pushupButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/situpButton"
+                        android:background="@drawable/situp"
+                        android:onClick="situpButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jackButton"
+                        android:background="@drawable/jack"
+                        android:onClick="jackButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/joggingButton"
+                        android:background="@drawable/jogging"
+                        android:onClick="joggingButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/squatButton"
+                        android:background="@drawable/squat"
+                        android:onClick="squatsButtonOnClick" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/legliftButton"
+                        android:background="@drawable/leglift"
+                        android:onClick="legliftButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/plankButton"
+                        android:foreground="@drawable/plank"
+                        android:onClick="plankButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pullupButton"
+                        android:background="@drawable/pullup"
+                        android:onClick="pullupButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cyclingButton"
+                        android:background="@drawable/biking"
+                        android:onClick="cyclingButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/walkingButton"
+                        android:background="@drawable/walking"
+                        android:onClick="walkingButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/swimmingButton"
+                        android:background="@drawable/swimming"
+                        android:onClick="swimmingButtonOnClick" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stairsButton"
+                        android:background="@drawable/stairs"
+                        android:onClick="stairsButtonOnClick" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Exercise"
+                android:id="@+id/textView3"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/caloriesText"
+                android:layout_marginTop="80dp"
+                android:textSize="30dp"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories Burned"
+                android:id="@+id/textView4"
+                android:textSize="24dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:layout_below="@+id/scrollView"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/pushup"
+                    android:layout_row="0"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pushupEquivalent"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:background="@drawable/situp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps"
+                    android:id="@+id/textView5"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/situpEquivalent"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:background="@drawable/jack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps"
+                    android:id="@+id/textView6"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jackEquivalent"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:background="@drawable/jogging" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:id="@+id/textView8"
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/joggingEquivalent"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:layout_row="8"
+                    android:layout_column="0"
+                    android:background="@drawable/squat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:id="@+id/textView10"
+                    android:layout_row="7"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squatEquivalent"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:layout_row="10"
+                    android:layout_column="0"
+                    android:background="@drawable/leglift" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps"
+                    android:id="@+id/textView7"
+                    android:layout_row="9"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/legliftEquivalent"
+                    android:layout_row="11"
+                    android:layout_column="0"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:layout_row="12"
+                    android:layout_column="0"
+                    android:background="@drawable/plank" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:id="@+id/textView9"
+                    android:layout_row="11"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plankEquivalent"
+                    android:layout_row="13"
+                    android:layout_column="0"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#ff0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView8"
+                    android:layout_row="14"
+                    android:layout_column="0"
+                    android:background="@drawable/pullup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:id="@+id/textView11"
+                    android:layout_row="13"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pullupEquivalent"
+                    android:layout_row="15"
+                    android:layout_column="0"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView9"
+                    android:layout_row="16"
+                    android:layout_column="0"
+                    android:background="@drawable/biking" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps"
+                    android:id="@+id/textView12"
+                    android:layout_row="15"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cyclingEquivalent"
+                    android:layout_row="17"
+                    android:layout_column="0"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView10"
+                    android:layout_row="18"
+                    android:layout_column="0"
+                    android:background="@drawable/walking" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:id="@+id/textView13"
+                    android:layout_row="17"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/walkingEquivalent"
+                    android:layout_row="19"
+                    android:layout_column="0"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#ff0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView11"
+                    android:layout_row="20"
+                    android:layout_column="0"
+                    android:background="@drawable/swimming" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:id="@+id/textView14"
+                    android:layout_row="19"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/swimmingEquivalent"
+                    android:layout_row="21"
+                    android:layout_column="0"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView12"
+                    android:layout_row="22"
+                    android:layout_column="0"
+                    android:background="@drawable/stairs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:id="@+id/textView15"
+                    android:layout_row="21"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stairsEquivalent"
+                    android:layout_row="23"
+                    android:layout_column="0"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#ff0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:id="@+id/textView16"
+                    android:layout_row="23"
+                    android:layout_column="1"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
