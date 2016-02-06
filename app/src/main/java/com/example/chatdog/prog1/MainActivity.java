@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void legliftButtonOnClick(View v){
         exerciseType = "Leg Lifts";
-        setValues();
     }
 
     public void plankButtonOnClick(View v){
@@ -118,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
         }
         exerciseCount = Integer.valueOf(input);
         Double rate = exerciseRates.get(exerciseType) / 100.0;
-        int calorie =  (int) (exerciseCount / rate);
-        ((TextView) findViewById(R.id.caloriesText)).setText(Integer.toString(calorie));
+        double calorie =  (exerciseCount / rate);
+        ((TextView) findViewById(R.id.caloriesText)).setText(Integer.toString((int) calorie));
 
         Double pushupRate = exerciseRates.get("Pushups") / 100.0;
         int pushups = (int) (calorie * pushupRate);
