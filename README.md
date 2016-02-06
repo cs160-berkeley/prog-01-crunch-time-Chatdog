@@ -29,7 +29,4 @@ See [CALConverter Demo ] (https://youtu.be/bqQcPfUvwMA)
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Any other support
-
-*Feel free to enhance your README. For Markdown syntax, see [the GitHub Guides](https://guides.github.com/features/mastering-markdown/). Remove this line in your submission.*
+Big thanks to the Stack Overflow community, for teach me how to Java gooder.
