@@ -3,13 +3,6 @@
 The CALConverter application allows users to enter the amount of a certain type of exercise, and quickly learn how many calories they've burned,
 as well as the equivalent amounts in other forms of activities.
 
-Features:
-	-Support for twelve different exercise activities
-	-Simple, single screen interface
-	-Scrollable exercise bar for easy activity selection
-	-Aesthetically pleasing light blue background
-
-
 To use the app, simply enter the number of repetitions or minutes of exercise you have performed, then select the type of exercise in the buttons below.
 
 The exercise buttons are contained in a scrollable bar, so simply swipe the options left or right until you see the exercise you are looking for.
